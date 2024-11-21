@@ -11,7 +11,7 @@
   <!-- Cabeçalho com navegação -->
   <header>
     <div class="logo">
-      <img src="assets/img/logo.png" alt="Entre Linhas Logo" width="150" height="100">
+      <a href="index.html" ><img src="assets/img/logo.png" alt="Logo Biblioteca Entre Linhas" width="150" height="100"></a>
     </div>
     <h1>Entre Linhas</h1>
     <nav>
@@ -24,23 +24,23 @@
   <main>
     <h2>Cadastrar Aluno</h2>
     <section class="student-form">
-      <form action="#" method="post">
+      <form id="Formulário" action="#" method="post">
         <div class="form-group">
-          <input type="text" placeholder="Inserir RA do aluno" required>
-          <input type="text" placeholder="Inserir nome do aluno" required>
+          <input type="text" id="ra" placeholder="Inserir RA do aluno" required>
+          <input type="text" id="nome" placeholder="Inserir nome do aluno" required>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Inserir sobrenome do aluno" required>
-          <input type="date" placeholder="Data de nascimento" required>
+          <input type="text" id="sobrenome" placeholder="Inserir sobrenome do aluno" required>
+          <input type="date" id="dataNascimento" placeholder="Data de nascimento" required>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Endereço" required>
-          <input type="email" placeholder="Email" required>
+          <input type="text" id="endereço" placeholder="Endereço" required>
+          <input type="email" id="email" placeholder="Email" required>
         </div>
         <div class="form-group">
-          <input type="tel" placeholder="Celular" required>
+          <input type="tel" id="Celular" placeholder="Celular" required>
         </div>
-        <button type="submit">Cadastrar</button>
+        <button type="submit" id="submit">Cadastrar</button>
       </form>
     </section>
   </main>
