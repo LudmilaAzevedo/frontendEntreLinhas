@@ -1,0 +1,97 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #d7b299;
+    color: #4e322d;
+  }
+  
+  header {
+    background-color: #ab6f5c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo h1 {
+    display: inline;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Título da Seção de Cadastro */
+  main h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #4e322d;
+  }
+  
+  /* Seção de Cadastro de Aluno */
+  .student-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .student-form form {
+    background-color: #d7b299;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    background-color: #ab6f5c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .student-form button {
+    background-color: #ab6f5c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .student-form button:hover {
+    background-color: #955b4e;
+  }
+  

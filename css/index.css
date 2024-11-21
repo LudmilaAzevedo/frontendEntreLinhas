@@ -1,0 +1,94 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #d7b299;
+    color: #4e322d;
+  }
+  
+  header {
+    background-color: #ab6f5c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo h1 {
+    display: inline;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Barra de busca */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: -30px;
+  }
+  
+  /* Catálogo */
+  main {
+    text-align: center;
+  }
+  
+  .catalog {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .book {
+    text-align: center;
+  }
+  
+  .book img {
+    width: 120px;
+    height: 180px;
+    border-radius: 5px;
+  }
+  
+  .book p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  h1{
+    text-align: center;
+  }
+
+  
