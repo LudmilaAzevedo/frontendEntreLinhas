@@ -26,24 +26,33 @@
     <section class="student-form">
       <form action="#" method="post">
         <div class="form-group">
-          <input type="number" placeholder="Inserir Id do livro" required>
-          <input type="text" placeholder="Inserir titulo do livro" required>
+          <input type="text" id="titulo"  placeholder="Inserir titulo do livro" required>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Inserir autor(a)" required>
+          <input type="text" id="autor" placeholder="Inserir autor(a)" required>
+          <input type="text"  id="editora" placeholder="Inserir editora" required>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Inserir editora" required>
-          <input type="number" placeholder="Inserir ano de publicação" required>
+         
+          <input type="number" id="ano_publicacao" placeholder="Ano de publicação" required>
+          <input type="number" id="isbn" placeholder="ISBN" required>
+          <input type="number" id="quant_total" placeholder="Quantidade total">
         </div>
         <div class="form-group">
-          <input type="number" placeholder="Inserir quantide disponível" required>
-          <input type="number" placeholder="Inserir ISBN">
+         
+          
+          <input type="number" id="quant_disponivel" placeholder="Quantidade disponível">
+          <input type="number" id="valor_aquisicao" placeholder="Valor aquisição">
+          <input type="text" id="status_livro_emprestado" placeholder="Status livros emprestado">
+         
+          
+          
         </div>
-        <button type="submit">Cadastrar</button>
+        <button type="submit"  onclick="enviarFormulario()">Cadastrar livro</button>
       </form>
     </section>
   </main>
+  <script src="js/livro.js"></script>
 
 </body>
 </html>
