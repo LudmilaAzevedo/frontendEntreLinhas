@@ -4,12 +4,12 @@ async function enviarFormulario() {
         "titulo": document.querySelectorAll("input")[0].value,
         "autor": document.querySelectorAll("input")[1].value,
         "editora": document.querySelectorAll("input")[2].value,
-        "ano_publicacao": document.querySelectorAll("input")[3].value,
+        "anoPublicacao": document.querySelectorAll("input")[3].value,
         "isbn": document.querySelectorAll("input")[4].value,
-        "quant_total": document.querySelectorAll("input")[5].value,
-        "quant_disponivel": document.querySelectorAll("input")[6].value,
-        "valor_aquisicao": document.querySelectorAll("input")[7].value,
-        "status_livro_emprestado": document.querySelectorAll("input")[8].value
+        "quantTotal": document.querySelectorAll("input")[5].value,
+        "quantDisponivel": document.querySelectorAll("input")[6].value,
+        "valorAquisicao": document.querySelectorAll("input")[7].value,
+        "statusLivroEmprestado": document.querySelectorAll("input")[8].value
     }
 
     try {
