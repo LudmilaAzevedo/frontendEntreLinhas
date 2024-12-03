@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entre Linhas - Cadastrar Aluno</title>
-  <link rel="stylesheet" href="css/cadastroAluno.css">
+  <title>Entre Linhas - Cadastrar Livro</title>
+  <link rel="stylesheet" href="css/cadastroLivro.css">
 </head>
 <body>
-
-  <!-- Cabeçalho com navegação -->
-  <header>
+  <header class="header">
     <div class="logo">
-      <a href="index.html" ><img src="assets/img/logo.png" alt="Logo Biblioteca Entre Linhas" width="150" height="100"></a>
+      <img src="assets/img/logo.png" alt="Logo Entre Linhas" width="150" height="100">
     </div>
     <h1>Entre Linhas</h1>
     <nav>
@@ -20,39 +18,21 @@
     </nav>
   </header>
 
-  <!-- Seção de Cadastro de livro -->
-  <main>
+  <main class="main-content">
     <h2>Cadastrar livro</h2>
-    <div class="student-form">
-      <form id="cadastrarLivro" action="#"  method="post">
-        <div class="form-group">
-          <input type="text" id="titulo"  placeholder="Inserir titulo do livro" required>
-        </div>
-        <div class="form-group">
-          <input type="text" id="autor" placeholder="Inserir autor(a)" required>
-          <input type="text"  id="editora" placeholder="Inserir editora" required>
-        </div>
-        <div class="form-group">
-         
-          <input type="number" id="anoPublicacao" placeholder="Ano de publicação" required>
-          <input type="number" id="isbn" placeholder="ISBN" required>
-          <input type="number" id="quantTotal" placeholder="Quantidade total">
-        </div>
-        <div class="form-group">
-         
-          
-          <input type="number" id="quantDisponivel" placeholder="Quantidade disponível">
-          <input type="number" id="valorAquisicao" placeholder="Valor aquisição">
-          <input type="text" id="statusLivroEmprestado" placeholder="Status livros emprestado">
-         
-          
-          
-        </div>
-        <button type="submit"  onclick="enviarFormulario()">Cadastrar livro</button>
-      </form>
-    </section>
+    <form action="/cadastrar" method="POST" class="form-container">
+      <input type="text" name="titulo" placeholder="Inserir título do livro" required>
+      <input type="text" name="autor" placeholder="Inserir autor(a)" required>
+      <input type="text" name="editora" placeholder="Inserir editora" required>
+      <input type="number" name="ano_publicacao" placeholder="Ano de publicação" required>
+      <input type="text" name="isbn" placeholder="ISBN" required>
+      <input type="number" name="quantidade_total" placeholder="Quantidade total" required>
+      <input type="number" name="quantidade_disponivel" placeholder="Quantidade disponível" required>
+      <input type="text" name="valor_aquisicao" placeholder="Valor aquisição" required>
+      <input type="text" name="status_livros" placeholder="Status livros emprestados" required>
+      <button type="submit" onclick="enviaFormulario(event)">Cadastrar</button>
+    </form>
   </main>
   <script src="js/livro.js"></script>
-
 </body>
 </html>

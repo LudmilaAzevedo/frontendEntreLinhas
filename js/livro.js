@@ -13,7 +13,7 @@ async function enviaFormulario(event) {
     }
 
     try {
-        const url = "http://localhost:3332/novo/livro";
+        const url = "http://localhost:3333/novo/livro";
         const respostaServdidor = await fetch(url, {
             method: "POST",
             headers: {
