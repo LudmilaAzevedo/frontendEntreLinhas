@@ -1,33 +1,33 @@
-async function enviarFormulario() {
-    // recuperar as informações do formulário e colocar em objeto JSON
-    const livroDTO = {
-        "titulo": document.querySelectorAll("input")[0].value,
-        "autor": document.querySelectorAll("input")[1].value,
-        "editora": document.querySelectorAll("input")[2].value,
-        "ano_publicacao": document.querySelectorAll("input")[3].value,
-        "isbn": document.querySelectorAll("input")[4].value,
-        "quant_total": document.querySelectorAll("input")[5].value,
-        "quant_disponivel": document.querySelectorAll("input")[6].value,
-        "valor_aquisicao": document.querySelectorAll("input")[7].value,
-        "status_livro_emprestado": document.querySelectorAll("input")[8].value
+async function enviaFormulario(event) {
+    event.preventDefault();
+    const dadosLivro = {
+        "titulo": document.querySelectorAll('input')[0].value,
+        "autor": document.querySelectorAll('input')[1].value,
+        "editora": document.querySelectorAll('input')[2].value,
+        "anoPublicacao": document.querySelectorAll('input')[3].value,
+        "isbn": document.querySelectorAll('input')[4].value,
+        "quantTotal": document.querySelectorAll('input')[5].value,
+        "quantDisponivel": document.querySelectorAll('input')[6].value,
+        "valorAquisicao": document.querySelectorAll('input')[7].value,
+        "statusLivroEmprestado": document.querySelectorAll('input')[8].value
     }
 
     try {
-        const respostaServidor = await fetch("http://localhost:3333/novo/livro", {
-            method: 'POST',
+        const url = "http://localhost:3332/novo/livro";
+        const respostaServdidor = await fetch(url, {
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-type': 'application/json'
             },
-            body: JSON.stringify(livroDTO)
+            body: JSON.stringify(dadosLivro)
         });
-    
-        if(!respostaServidor.ok) {
-            throw new Error("Erro ao enviar os dados para o servidor. Entre em contato com o administrador do sistema.");
+
+        if (!respostaServdidor.ok) {
+            alert('algum erro no servidor');
+        } else {
+            alert('Livro cadastrado com sucesso!');
         }
-    
-        alert("Livro cadastrado com sucesso!");
     } catch (error) {
-        console.log(error);
-        alert(`Erro ao se comunicar com o servidor. ${error}`);
+        alert(error);
     }
 }
